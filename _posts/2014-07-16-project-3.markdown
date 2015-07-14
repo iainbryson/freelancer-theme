@@ -1,12 +1,26 @@
 ---
 layout: default
 modal-id: 3
-date: 2014-07-16
-img: circus.png
+date: 2015-04-17
+img: cambodia-expenses.png
+svg: iconmonstr-coin-2-icon.svg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
+project-date: April 2015
+client: Personal
 category: Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
-
+description: Comparison of expenses across countries.
 ---
+
+What sort of a budget do you need to travel?  It's easy set a budget, but harder to stick to it.
+
+After my travels in Southeast Asia, I sifted the data to find out much it actually cost. This project analyzed and visualized the expenses across the various countries I visited.
+
+The visualization is [here][cost-viz-app].  It's written in Javascript with d3.js providing the charting.
+
+If you care for the technical details they're described in a post on my blog [here][github-expenses]
+
+![Example report for daily expenses in Cambodia](img/portfolio/cambodia-top-expenses.png "Expenses in Cambodia")
+
+[github-expenses]: https://iainbryson.github.io/visualization/2015/03/23/expense-visualization/
+[github-map]: https://iainbryson.github.io/visualization/2015/06/15/post-map/
+[cost-viz-app]: https://tranquil-river-4676.herokuapp.com/index.html

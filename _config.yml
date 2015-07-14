@@ -1,21 +1,21 @@
 # Site settings
-title: Freelancer
-email: your-email@domain.com
-url: https://example.github.io
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Freeroaming Solutions
+email: iain@iain-bryson.ca
+url: http://freeroamingsolutions.com
+description: "web development consulting.  data visualization. freelancing."
 
 # Contact form: comment the line below if you want to stick with the default PHP contact form
 contact: static
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  primary: 1d0ff2 #80B3FF
+  secondary:  0f7cf2 #FD6E8A
+  secondary-dark: 910ff2 #A2122F
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
+  copyright: Iain Bryson
   location: Location
   social: Around the Web
   credits: Credits
@@ -23,23 +23,22 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: http://twitter.com/iainbryson
+#  - title: facebook
+#    url:
+#  - title: stack-overflow
+#    url: http://stackoverflow.com/questions/tagged/jekyll
+#  - title: bitbucket
+#    url: http://bitbucket.org/jekyll
   - title: github
-    url: http://github.com/jekyll
+    url: http://github.com/iainbryson
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
-
+  - line: Seattle, WA
+ 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+credits: 'Thanks to: <div>Freelancer Bootstrap <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAAahUKEwit3prFpNnGAhVXK4gKHbAwBfE&url=https%3A%2F%2Fgithub.com%2Fjeromelachaud%2Ffreelancer-theme&ei=DE2kVa2oCdfWoASw4ZSIDw&usg=AFQjCNGwx20BW1D57wCZj-oUd5GEoyj1qw&sig2=56oBvMaSKmrErmrpvKm1ZA&bvm=bv.97653015,d.cGU">theme</a><br/><a href="http://iconmonstr.com/">@iconmonstr</a> graphics.</div>'
 
 # Build settings
 markdown: kramdown

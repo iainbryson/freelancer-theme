@@ -1,12 +1,23 @@
 ---
 layout: default
 modal-id: 2
-date: 2014-07-17
-img: cake.png
+date: 2015-06-16
+svg: iconmonstr-map-2-icon.svg
+img: map-toc.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
+project-date: June 2015
+client: Personal Project
 category: Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+description: Route detection and map-based blog indexing.
 
 ---
+
+Writing a travel blog is hard enough, but it's incredibly frustrating to find that your hard work is almost impossible to navigate.  New readers need to navigate a sea of posts.
+
+To it easier to get a sense of how all the posts tie together, I wrote a tool which automatically infers the route taken (using GPS data embedded in the images) and produces a hierarchical clustering of locations.  Now readers can zoom in and out of the locales they're interested in and find the relevant posts.
+
+The page is [here][sea-trip].  The blog post explaining the technical details is [here][github-map].
+
+[github-map]: https://iainbryson.github.io/visualization/2015/06/15/post-map/
+[sea-trip]: http://www.thecastawaylife.com/blog/trips/south-east-asia/
+
