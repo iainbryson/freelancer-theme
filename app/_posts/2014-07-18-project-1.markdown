@@ -8,12 +8,14 @@ alt: image-alt
 project-date: July 2015
 client: Cremazen.com
 client-url: cremazen.com
-category: Web Development
+category: Web-Development
 category-url:
 description:  Redesign of the Cremazen Web site
 ---
 
-Artisanal coffee roaster [cremazen][cremazen] was looking for a more effective web presence.  Working with the owner, we built a new site using off-the-shelf solutions from [Squarespace][squarespace] and [Moonclerk][moonclerk].  With remarkable speed the business was up and running with a modern-style e-commerce site featuring subscriptions.
+Artisanal coffee roaster [Cremazen][cremazen] was looking for a more effective web presence.  With the client's input and feedback, and I designed and built a new site using off-the-shelf solutions from [Squarespace][squarespace] and [Moonclerk][moonclerk].  With remarkable speed the business was up and running with a modern-style e-commerce site featuring subscriptions.
+
+This is an ongoing project, iteratively improving the site using analytics and driving the business with social media marketing.
 
 ### Before
 

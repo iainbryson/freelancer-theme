@@ -30,3 +30,14 @@ View this jekyll theme in action [here](https://jeromelachaud.github.io/freelanc
 
 =========
 For more details, read the [documentation](http://jekyllrb.com/)
+
+
+{% capture svg %}{% include iconmonstr-globe-4-icon.svg  %}{% endcapture %}
+{% assign svgsplit = svg | split: 'svg11.dtd">' %}
+{% assign svgpart = svgsplit[1] | escape %}
+{{ svgpart }}                            
+
+{% capture svg %}{% include {{post.svg}}  %}{% endcapture %}
+{% assign svgsplit = svg | split: 'svg11.dtd">' %}
+{% assign svgpart = svgsplit[1] | escape %}
+{{ svgpart }}                            <!--

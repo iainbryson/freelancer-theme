@@ -31,8 +31,8 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*    text-transform: uppercase;*/
+    font-family: Palatino, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -86,19 +86,21 @@ header {
 }
 
 header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
-header img {
+header img, header object {
     display: block;
     margin: 0 auto 20px;
+    height:8em;
+    width:8em;
 }
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*    text-transform: uppercase;*/
+    font-family: Palatino, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
 }
@@ -110,8 +112,13 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
+        padding-top: 140px;
+        padding-bottom: 50px;
+    }
+
+    header img, header object {
+        height: 20em;
+        width: 20em;
     }
 
     header .intro-text .name {
@@ -452,6 +459,15 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-.svg-centered {
-    display: inline-block;
+#globe-4-icon {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.skills-cloud {
+    display: block;
+}
+
+.skills-cloud p{
+    font-size: 80%;
 }

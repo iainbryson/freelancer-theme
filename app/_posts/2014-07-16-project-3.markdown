@@ -7,13 +7,13 @@ svg: iconmonstr-coin-2-icon.svg
 alt: image-alt
 project-date: April 2015
 client: Personal
-category: Web Development
+category: Web-Development
 description: Comparison of expenses across countries.
 ---
 
 What sort of a budget do you need to travel?  It's easy set a budget, but harder to stick to it.
 
-After my travels in Southeast Asia, I sifted the data to find out much it actually cost. This project analyzed and visualized the expenses across the various countries I visited.
+After my travels in Southeast Asia, I sifted the data to find out much it really cost. This project analyzed and visualized the expenses across the various countries I visited.
 
 The visualization is [here][cost-viz-app].  It's written in Javascript with d3.js providing the charting.
 
