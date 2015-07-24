@@ -41,3 +41,7 @@ For more details, read the [documentation](http://jekyllrb.com/)
 {% assign svgsplit = svg | split: 'svg11.dtd">' %}
 {% assign svgpart = svgsplit[1] | escape %}
 {{ svgpart }}                            <!--
+
+
+
+node ~/src/db/WebScratchpad/node-server.js

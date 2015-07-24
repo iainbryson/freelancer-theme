@@ -135,11 +135,21 @@ module.exports = function(grunt) {
         },
         uglify: {
             options: {
-                preserveComments: false
+                preserveComments: false,
+                report: 'min'
             },
             dist: {
                 files: {
-                    '.tmp/<%= app.baseurl %>/js/scripts.js': ['<%= app.app %>/js/jquery-1.11.0.js', '<%= app.app %>/js/**/*.js']
+                    '.tmp/<%= app.baseurl %>/js/scripts.js':
+                    ['<%= app.app %>/js/jquery-1.11.0.js',
+                    '<%= app.app %>/js/bootstrap.js',
+                    '<%= app.app %>/js/jquery.easing.min.js',
+                    '<%= app.app %>/js/classie.js',
+                    '<%= app.app %>/js/cbpAnimatedHeader.js',
+                    '<%= app.app %>/js/jqBootstrapValidation.js',
+                    '<%= app.app %>/js/contact_me_static.js',
+                    '<%= app.app %>/js/freelancer.js',]
+//    '<%= app.app %>/js/*.js']
                 }
             }
         },
@@ -200,7 +210,9 @@ module.exports = function(grunt) {
                 options: {
                     base: './',
                     css: [
-                        '.tmp/<%= app.baseurl %>/css/blog.css'
+//                        '.tmp/<%= app.baseurl %>/css/blog.css'
+                        '.tmp/<%= app.baseurl %>/css/style.css',
+                        '.tmp/<%= app.baseurl %>/css/font-awesome/css/font-awesome.min.css'
                     ],
                     minify: true,
                     width: 320,
@@ -210,7 +222,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: '.tmp/<%= app.baseurl %>',
                     src: ['**/*.html'],
-                    dest: '.tmp/<%= app.baseurl %>'
+                    dest: '<%= app.dist %>/<%= app.baseurl %>'
                 }]
             }
         },
@@ -224,7 +236,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: '.tmp/<%= app.baseurl %>/css',
                     src: ['*.css'],
-                    dest: '.tmp/<%= app.baseurl %>/css'
+                    dest: '.tmp/<%= app.baseurl %>/<%= app.baseurl %>/css'
                 }]
             }
         },
@@ -267,14 +279,14 @@ module.exports = function(grunt) {
             dist_fonts: {
                 files: [{
                     expand: true,
-                    dot: true,
-                    cwd: '.tmp/<%= app.baseurl %>',
+                    flatten: true,
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>',
                     src: [
-                        'css/font-awesome/fonts,
+                        'css/font-awesome/fonts/*',
                     ],
                     dest: '<%= app.dist %>/<%= app.baseurl %>/fonts'
                 }],
-            }
+            },
             dist_tmp: {
                 files: [{
                     expand: true,
@@ -394,6 +406,13 @@ module.exports = function(grunt) {
                 src: "**/*.html",
                 dest: '.',
                 params: { ContentType: 'text/html'}
+              },
+              {
+                expand: true,
+                cwd: '<%= app.dist %>_gz',
+                src: "**/*.svg",
+                dest: '.',
+                params: { ContentType: 'image/svg+xml'}
               }
             ]
           },
@@ -446,11 +465,12 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'jekyll:dist',
-//        'imagemin',
-//        'svgmin',
+        'imagemin',
+        'svgmin',
         'copy:dist_tmp',
 //        'sass:dist',
-        'uncss',
+// doesn't work: maybe the popup modal's have dynamic styles which this removes?
+//        'uncss',
         'processhtml',
         'autoprefixer',
         'cssmin',
