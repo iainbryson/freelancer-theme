@@ -2,5 +2,7 @@ _site
 *.out
 node_modules
 dist
-distGZipped
+dist_gz
 .tmp
+*.lock
+aws-keys.json

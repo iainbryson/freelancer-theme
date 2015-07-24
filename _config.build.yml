@@ -1,0 +1,54 @@
+# Site settings
+title: Freeroaming Solutions
+email: iain@iain-bryson.ca
+url: http://freeroamingsolutions.com
+description: "web development consulting.  data visualization. freelancing."
+
+# Contact form: comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 1d0ff2 #80B3FF
+  secondary:  0f7cf2 #FD6E8A
+  secondary-dark: 910ff2 #A2122F
+
+# Footer settings
+footer:
+  copyright: Iain Bryson
+  location: Location
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/iainbryson
+  - title: github
+    url: http://github.com/iainbryson
+#  - title: twitter
+#    url: http://twitter.com/iainbryson
+#  - title: facebook
+#    url:
+#  - title: stack-overflow
+#    url: http://stackoverflow.com/questions/tagged/jekyll
+#  - title: bitbucket
+#    url: http://bitbucket.org/jekyll
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: <strong>Remote</strong>
+  - line: Based out of Seattle, WA
+ 
+# Credits content
+credits: '<div>Freelancer Bootstrap <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAAahUKEwit3prFpNnGAhVXK4gKHbAwBfE&url=https%3A%2F%2Fgithub.com%2Fjeromelachaud%2Ffreelancer-theme&ei=DE2kVa2oCdfWoASw4ZSIDw&usg=AFQjCNGwx20BW1D57wCZj-oUd5GEoyj1qw&sig2=56oBvMaSKmrErmrpvKm1ZA&bvm=bv.97653015,d.cGU">theme</a><br/><a href="http://iconmonstr.com/">@iconmonstr</a> graphics.</div>'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+assets:
+    compress:
+      js_compressor:  uglifier
+      css_compressor: sass
+  
