@@ -1,3 +1,92 @@
 ---
 layout: style
 ---
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+.expertise-area {
+    position:relative;
+    width: 190px;
+    /*float: left;*/
+    display: inline-block;
+    vertical-align: top;
+    margin: 1em auto auto 1em;
+    padding-top: 5px;
+    height: 200px;
+    color: #000;
+    border: 2px #eee solid;
+    background-color: #eef;
+    overflow: hidden;
+/*  @include mobile {
+    margin: 0 20px;
+    width: 300px;
+  }*/
+}
+
+
+.expertise-area-title, .expertise-area-title a {
+    font-size: 1.2em;
+    color: #{{ site.color.primary }};
+    border-bottom: 1px solid #{{ site.color.primary }};
+    width: 80%;
+/*    line-height: 1.2;
+    min-height: 60px;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: normal;
+    text-align: center;
+    font-weight: 400;
+}
+
+.expertise-area .expertise-details {
+    text-align: left;
+    padding-left: .5em;
+    padding-right: .5em;
+    font-size: 1em;
+}
+
+.expertise-icon {
+    text-align: center;
+    margin-left: auto;
+}
+
+.expertise-icon img {
+    width: 130px;
+    height: 80px;
+}
+
+.expertise-area-links {
+    font-size: 0.7em;
+    font-family: "monaco", "Courier-new", fixed;
+    padding: 2px;
+    margin-top: auto;
+    padding-top: auto;
+    vertical-align: bottom;
+    position: absolute;
+    width:100%;
+    bottom: 0;
+    text-align: center;
+    background-color:  #{{ site.color.primary-light }};
+}
+
+.expertise-areas  {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+

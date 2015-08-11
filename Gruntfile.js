@@ -58,11 +58,7 @@ module.exports = function(grunt) {
                     open: {
                         target: 'http://localhost:9000/<%= app.baseurl %>'
                     },
-                    base: [
-                        '.jekyll',
-                        '.tmp',
-                        '<%= app.app %>'
-                    ]
+                    base: '.jekyll/<%= app.baseurl %>/.tmp'
                 }
             },
             dist: {
@@ -109,7 +105,7 @@ module.exports = function(grunt) {
                 options: {
                     bundleExec: true,
                     config: '_config.yml',
-                    dest: ['.jekyll/<%= app.baseurl %>', '.tmp']
+                    dest: '.jekyll/<%= app.baseurl %>/.tmp'
                 }
             }
         },
