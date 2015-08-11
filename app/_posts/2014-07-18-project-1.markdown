@@ -10,6 +10,7 @@ client: Cremazen.com
 client-url: cremazen.com
 category: Web-Development
 category-url:
+title: E-Commerce Site Redesign
 description:  Redesign of the Cremazen Web site
 ---
 

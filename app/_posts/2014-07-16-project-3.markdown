@@ -8,6 +8,7 @@ alt: image-alt
 project-date: April 2015
 client: Personal
 category: Web-Development
+title: Cost of Travel Visualization
 description: Comparison of expenses across countries.
 ---
 

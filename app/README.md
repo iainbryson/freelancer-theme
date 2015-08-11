@@ -32,15 +32,44 @@ View this jekyll theme in action [here](https://jeromelachaud.github.io/freelanc
 For more details, read the [documentation](http://jekyllrb.com/)
 
 
+
+Originally the code looked like:
+
+```
 {% capture svg %}{% include iconmonstr-globe-4-icon.svg  %}{% endcapture %}
 {% assign svgsplit = svg | split: 'svg11.dtd">' %}
 {% assign svgpart = svgsplit[1] | escape %}
 {{ svgpart }}                            
+```
 
+But this didn't work.  You need to  remove the dtd stuff also.  And the encode turned <svg into &lt;svg which isn't what we want either.
+
+
+to replace 
+
+```html
+                    <object data="img/iconmonstr-globe-4-icon.svg"  class="img-responsive light-svg" type="image/svg+xml">
+                        <img class="img-responsive" src="img/profile.png" alt="">
+                    </object>
+
+```
+
+```
+                    <div class="img-responsive light-svg header-icon">
 {% capture svg %}{% include {{post.svg}}  %}{% endcapture %}
 {% assign svgsplit = svg | split: 'svg11.dtd">' %}
-{% assign svgpart = svgsplit[1] | escape %}
-{{ svgpart }}                            <!--
+{% assign svgpart = svgsplit[1] | replace_first:'svg11.dtd">','' %}
+{{ svgpart }}
+                    </div>
+```
+
+to replace
+
+```html
+                            <object data="img/portfolio/{{ post.svg }}" type="image/svg+xml"  class="img-responsive" >
+                                <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                            </object>
+```
 
 
 

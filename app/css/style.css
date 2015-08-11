@@ -1,7 +1,7 @@
 ---
 layout: style
 ---
-// Nicolas Gallagher's micro clearfix hack
+// Nicolas Gallaghers micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
@@ -15,18 +15,40 @@ layout: style
 
 
 
+.bar-chart-background {
+    background-image:url('/img/iconmonstr-bar-chart-icon.svg');
+    background-size: 20em 14em;
+    background-position: 0em 0em;
+    background-repeat: no-repeat;
+}
+
+.web-background {
+    background-image:url('/img/iconmonstr-html-code-icon.svg');
+    background-size: 20em 14em;
+    background-position: 0em 0em;
+    background-repeat: no-repeat;
+}
+
+.script-background {
+    background-image:url('/img/iconmonstr-javascript-code-icon.svg');
+    background-size: 20em 14em;
+    background-position: 0em 0em;
+    background-repeat: no-repeat;
+}
+
+
 .expertise-area {
     position:relative;
-    width: 190px;
+    width: 20em;
     /*float: left;*/
     display: inline-block;
     vertical-align: top;
     margin: 1em auto auto 1em;
     padding-top: 5px;
-    height: 200px;
+    height: 13em;
     color: #000;
-    border: 2px #eee solid;
-    background-color: #eef;
+    border: 2px #000 solid;
+    background-color: #eeeeff;
     overflow: hidden;
 /*  @include mobile {
     margin: 0 20px;
@@ -36,9 +58,9 @@ layout: style
 
 
 .expertise-area-title, .expertise-area-title a {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #{{ site.color.primary }};
-    border-bottom: 1px solid #{{ site.color.primary }};
+    border-bottom: 2px solid #{{ site.color.primary }};
     width: 80%;
 /*    line-height: 1.2;
     min-height: 60px;*/
@@ -56,7 +78,7 @@ layout: style
     text-align: left;
     padding-left: .5em;
     padding-right: .5em;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .expertise-icon {
@@ -90,3 +112,9 @@ layout: style
 }
 
 
+
+.header-icon, .header-icon svg{
+    width: 20em;
+    height: 20em;
+    display: inline-block;
+}

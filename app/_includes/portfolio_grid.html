@@ -17,9 +17,12 @@
                                     <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <object data="img/portfolio/{{ post.svg }}" type="image/svg+xml"  class="img-responsive" >
-                                <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-                            </object>
+                    <div class="img-responsive light-svg header-icon">
+{% capture svg %}{% include {{post.svg}}  %}{% endcapture %}
+{% assign svgsplit = svg | split: 'svg11.dtd">' %}
+{% assign svgpart = svgsplit[1] | replace_first:'svg11.dtd">','' %}
+{{ svgpart }}
+                    </div>
                             
                         </a>
                     </div>

@@ -8,6 +8,7 @@ alt: image-alt
 project-date: June 2015
 client: Personal Project
 category: Web-Development
+title: Route Inference & Visualization
 description: Route detection and map-based blog indexing.
 
 ---
